@@ -3,35 +3,63 @@
 #### 介绍
 图书馆系统管理、spring boot、java、mysql。
 
-#### 软件架构
-软件架构说明
+### 概述
 
+本项目是一个基于Spring + Spring MVC + MyBatis框架的图书馆管理系统，使用Maven进行依赖管理和项目构建。系统主要功能涵盖图书查询、图书管理（包括添加、删除、更新）、读者管理、图书的借阅与归还功能，以及借还日志的记录等。
 
-#### 安装教程
+### 环境配置
 
-1.  xxxx
-2.  xxxx
-3.  xxxx
+#### 开发环境
+- **操作系统**：Windows 10
+- **IDE**：IntelliJ IDEA 2018.3
 
-#### 使用说明
+#### 运行环境
+- **数据库**：MySQL 5.7
+  - **用户名**：root
+  - **密码**：123456
+  - **数据导入**：确保MySQL服务正在运行，并导入`library.sql`文件以初始化数据库数据。
+- **Maven**：确保Maven已正确安装并配置到系统环境变量中。
 
-1.  xxxx
-2.  xxxx
-3.  xxxx
+### 运行配置步骤
 
-#### 参与贡献
+1. **安装并配置MySQL 5.7**
+   - 下载并安装MySQL 5.7。
+   - 使用默认或自定义配置启动MySQL服务。
+   - 使用MySQL客户端（如MySQL Workbench或命令行）连接到数据库服务器。
+   - 创建一个名为`library`的数据库（如果`library.sql`脚本未指定数据库名）。
+   - 执行`library.sql`脚本以导入初始数据。
 
-1.  Fork 本仓库
-2.  新建 Feat_xxx 分支
-3.  提交代码
-4.  新建 Pull Request
+2. **配置Maven**
+   - 下载Maven并解压到指定目录。
+   - 将Maven的`bin`目录添加到系统的`PATH`环境变量中。
+   - 验证Maven安装是否成功，打开命令行窗口，输入`mvn -v`，应显示Maven的版本信息。
 
+3. **导入并运行项目**
+   - **注意**：虽然说明中提到“未使用maven项目，可以直接导入使用，不需要在配置了”，但基于Spring + Spring MVC + MyBatis的项目通常建议使用Maven进行依赖管理。因此，以下步骤假设项目是一个Maven项目。
+   - 在IntelliJ IDEA中，选择“File” > “Open”，然后选择项目的根目录。
+   - IDEA会自动识别Maven项目并加载`pom.xml`文件，下载并安装所需的依赖。
+   - 配置数据库连接：在项目的`application.properties`或`application.yml`文件中，配置数据库连接信息（如URL、用户名、密码等）。
+   - 运行项目：在IDEA中，右键点击项目中的`Application`类或包含`main`方法的类，选择“Run”。
 
-#### 特技
+4. **访问系统**
+   - 项目启动后，通常会在控制台输出访问URL（如`http://localhost:8080`）。
+   - 打开浏览器，输入访问URL，即可进入图书馆管理系统的登录页面。
+   - 使用系统预设的管理员账号或自行注册的账号登录系统，开始使用各项功能。
 
-1.  使用 Readme\_XXX.md 来支持不同的语言，例如 Readme\_en.md, Readme\_zh.md
-2.  Gitee 官方博客 [blog.gitee.com](https://blog.gitee.com)
-3.  你可以 [https://gitee.com/explore](https://gitee.com/explore) 这个地址来了解 Gitee 上的优秀开源项目
-4.  [GVP](https://gitee.com/gvp) 全称是 Gitee 最有价值开源项目，是综合评定出的优秀开源项目
-5.  Gitee 官方提供的使用手册 [https://gitee.com/help](https://gitee.com/help)
-6.  Gitee 封面人物是一档用来展示 Gitee 会员风采的栏目 [https://gitee.com/gitee-stars/](https://gitee.com/gitee-stars/)
+### 注意事项
+
+- 确保MySQL服务在运行状态，并且数据库连接信息配置正确。
+- 如果遇到依赖下载失败的问题，请检查Maven仓库地址是否配置正确，或尝试手动下载依赖并安装到本地仓库。
+- 在开发过程中，建议定期备份数据库数据，以防数据丢失。
+- 如有需要，可以根据实际需求对系统进行二次开发和功能扩展。
+
+#### 说明
+如果想要看项目的完整版视频可以联系我。如果需要定制化的话可以根据功能进行修改。
+
+#### 毕设研究方向和计划安排
+不知道怎么进行选择毕设或者选择毕设之后无从下手。全程协助完整技术支持。让你在答辩的时候对技术游刃有余。这条只对想要自己写毕设的人。
+
+:tw-1f345: **添加QQ请备注：060毕设解答** 
+
+#### 联系我
+QQ: 540182436
